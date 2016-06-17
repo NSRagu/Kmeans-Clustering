@@ -1,0 +1,23 @@
+{
+  "name": "K-MeansJS",
+  "version": "1.0.0",
+  "description": "K-MeansJS contains all the necessary logic for clustering unsupervised n-dimensional data.",
+  "main": "K_Means.js",
+  "author": "Hussain Mir Ali",
+  "private": true,
+  "license": "",
+  "dependencies": {
+    "mathjs": "^3.2.1",
+    "q": "^1.4.1",
+    "sinon": "^1.17.2",
+    "yuidocjs": "^0.9.0",
+    "mocha": "^2.3.4"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "-"
+  }
+}

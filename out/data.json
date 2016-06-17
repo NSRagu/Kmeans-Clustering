@@ -1,0 +1,210 @@
+{
+    "project": {},
+    "files": {
+        "K_Means.js": {
+            "name": "K_Means.js",
+            "modules": {},
+            "classes": {
+                "K_Means_Clustering": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "K_Means_Clustering": {
+            "name": "K_Means_Clustering",
+            "shortname": "K_Means_Clustering",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "K_Means.js",
+            "line": 6,
+            "description": "The K_Means_Clustering class contains all the necessary logic for clustering unsupervised data.",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "args",
+                    "description": "Contains all the necessary parameters for K-Means clustering as listed below.",
+                    "type": "Object",
+                    "props": [
+                        {
+                            "name": "random_Init_Count",
+                            "description": "Required parameter for how many times to randomly initialize centroids.",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "cluster_count",
+                            "description": "Required value to specify how many clusters in total are to be initialized.",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "notify_count",
+                            "description": "Required value to execute the iteration_callback after every x number of iterations.",
+                            "type": "Number"
+                        },
+                        {
+                            "name": "iteration_callback",
+                            "description": "Required callback that can be used for getting information for diagnostics.",
+                            "type": "Function"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "K_Means.js",
+            "line": 1,
+            "description": "Copyright (c) 2016 Hussain Mir Ali",
+            "class": "K_Means_Clustering"
+        },
+        {
+            "file": "K_Means.js",
+            "line": 43,
+            "description": "This method serves as the logic for the calculating distance between centroids and data points.",
+            "itemtype": "method",
+            "name": "distance",
+            "params": [
+                {
+                    "name": "X",
+                    "description": "This is the unsupervised input data for clustering.",
+                    "type": "Matrix"
+                },
+                {
+                    "name": "u",
+                    "description": "This is the centroid from which distance relative to all input data points will be calculated.",
+                    "type": "Matrix"
+                }
+            ],
+            "return": {
+                "description": "distance This is a matrix containing the distance of all data points relative to a centroid.",
+                "type": "Matrix"
+            },
+            "class": "K_Means_Clustering"
+        },
+        {
+            "file": "K_Means.js",
+            "line": 65,
+            "description": "This method updates each centroid by calculating the mean of the respective clusters.",
+            "itemtype": "method",
+            "name": "update_Centroids",
+            "return": {
+                "description": "this.centroids Are the updated centroids for the given data.",
+                "type": "Matrix"
+            },
+            "class": "K_Means_Clustering"
+        },
+        {
+            "file": "K_Means.js",
+            "line": 85,
+            "description": "This method contains the logic to assign clusters points to different centroids.",
+            "itemtype": "method",
+            "name": "assign_Clusters",
+            "params": [
+                {
+                    "name": "X",
+                    "description": "This is the unsupervised input data for clustering.",
+                    "type": "Matrix"
+                }
+            ],
+            "return": {
+                "description": "this.clusters This is the matrix containing the clustered data.",
+                "type": "Matrix"
+            },
+            "class": "K_Means_Clustering"
+        },
+        {
+            "file": "K_Means.js",
+            "line": 127,
+            "description": "This method contains the iterative implementation of the K-Means clustering algorithm.",
+            "itemtype": "method",
+            "name": "start_Clustering",
+            "params": [
+                {
+                    "name": "X",
+                    "description": "The matrix to be used as the data input for clustering.",
+                    "type": "Matrix"
+                }
+            ],
+            "return": {
+                "description": "defered.promise Returns a promise upon completion.",
+                "type": "Object"
+            },
+            "class": "K_Means_Clustering"
+        },
+        {
+            "file": "K_Means.js",
+            "line": 162,
+            "description": "This method is reponsible for passing data to the provided callback function for the purpose of diagnostics.",
+            "itemtype": "method",
+            "name": "apply_Callback",
+            "params": [
+                {
+                    "name": "isComplete",
+                    "description": "The boolean value to indicate if the clustering is completed.",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "iterations",
+                    "description": "Is the number of iterations for the K-Means clustering algorithm.",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "info Is the object containing information for diagnostics.",
+                "type": "Array"
+            },
+            "class": "K_Means_Clustering"
+        },
+        {
+            "file": "K_Means.js",
+            "line": 182,
+            "description": "This method is reponsible for generating unique random numbers and keeps track of previous random values.",
+            "itemtype": "method",
+            "name": "unique_Random_Val",
+            "params": [
+                {
+                    "name": "X",
+                    "description": "The matrix to be used as the unsupervised data.",
+                    "type": "Matrix"
+                }
+            ],
+            "return": {
+                "description": "Returns the unique random value.",
+                "type": "Number"
+            },
+            "class": "K_Means_Clustering"
+        },
+        {
+            "file": "K_Means.js",
+            "line": 205,
+            "description": "This method is responsible to randomly initiate centroids for the given data.",
+            "itemtype": "method",
+            "name": "initiate_Centroids",
+            "params": [
+                {
+                    "name": "X",
+                    "description": "This is the unsupervised input data for clustering.",
+                    "type": "Matrix"
+                }
+            ],
+            "return": {
+                "description": "this.centroids Are the randomly genrated centroids.",
+                "type": "Matrix"
+            },
+            "class": "K_Means_Clustering"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "Missing item type\nCopyright (c) 2016 Hussain Mir Ali",
+            "line": " K_Means.js:1"
+        }
+    ]
+}
