@@ -26,7 +26,6 @@ K-MeansJS contains all the necessary logic for clustering unsupervised n-dimensi
 
 ```
 //main.js file.
-
 var callback = function (data) {
     console.log(data);
 };
@@ -45,7 +44,7 @@ var data_generate = function() {
 
 data_generate();
 
-var KMeans = window.K_Means_Clustering({
+var KMeans = new window.K_Means_Clustering({
     random_Init_Count: 4,
     cluster_count: 7,
     max_iterations: 10000,
