@@ -58,17 +58,16 @@ KMeans.start_Clustering(data).then(function(return_Val) {
 });
 ```
 ```
-//index.html
+        <!-- index.html -->
 
 <!doctype html>
 <html>
   <head>
   </head>
   <body >
-        <script src="q.js"></script>
-        <script src="math.js"></script>
-        <script src="K_Means.js"></script>
-        <!-- endbuild -->
+        <script src="K-Means/lib/q.js"></script>
+        <script src="K-Means/lib/math.js"></script>
+        <script src="K-Means/K_Means.js"></script>
 </body>
 </html>
 
