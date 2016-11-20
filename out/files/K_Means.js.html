@@ -85,6 +85,10 @@ Copyright (c) 2016 Hussain Mir Ali
 **/
 &quot;use strict&quot;;
 
+var window_object = (function(g){
+      return g;
+  }(this));
+
 /**
  * The K_Means_Clustering class contains all the necessary logic for clustering unsupervised data.
  *
@@ -106,8 +110,15 @@ var K_Means_Clustering = function(args) {
             &#x27;message&#x27;: &quot;The required constructor parameters cannot be empty.&quot;
              });
     } else {
+
+    if(Object.keys(window_object).length === 0){
         this.MathJS = require(&#x27;mathjs&#x27;);
         this.q = require(&#x27;q&#x27;);
+    }
+    else{
+        this.MathJS = math;
+        this.q = Q;
+    }
         this.initArgs = args;
         this.notify_count = this.initArgs.notify_count || 100;
         this.random_Init_Count = this.initArgs.random_Init_Count || 5;
@@ -305,8 +316,12 @@ K_Means_Clustering.prototype.initiate_Centroids = function(X) {
   return this.centroids;
 };
 
-module.exports = K_Means_Clustering;
 
+if(Object.keys(window_object).length === 0){
+    module.exports = K_Means_Clustering;
+}else{
+    window[&#x27;K_Means_Clustering&#x27;] = K_Means_Clustering;
+}
     </pre>
 </div>
                     </div>

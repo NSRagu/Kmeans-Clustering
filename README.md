@@ -12,9 +12,7 @@ K-MeansJS contains all the necessary logic for clustering unsupervised n-dimensi
 
 ##Installation:
 *  Download the project and unzip it.
-*  Copy the 'K-MeansJS' folder to your node_modules folder in your project directory.
-*  Require it using 'require('K-MeansJS')' in your main JavaScript file.
-*  If you want to reinstall node_modules for this project then run 'sudo npm install -g" in your terminal under the 'K-MeansJS' project directory.
+*  Copy the 'K-MeansJS' folder to your node_modules folder in your project directory and follow sample usage.
 
 ##Testing:
 * For unit testing Mocha and Sinon have been used. Use 'mocha test' to start the test.
@@ -26,9 +24,8 @@ K-MeansJS contains all the necessary logic for clustering unsupervised n-dimensi
 
 ###Sample usage:
 
-```javascript
-var KMeans = require('K-MeansJS');
-var callback_data;
+```
+//main.js file.
 
 var callback = function (data) {
     console.log(data);
@@ -48,7 +45,7 @@ var data_generate = function() {
 
 data_generate();
 
-var KMeans = new K_Means({
+var KMeans = window.K_Means_Clustering({
     random_Init_Count: 4,
     cluster_count: 7,
     max_iterations: 10000,
@@ -57,7 +54,23 @@ var KMeans = new K_Means({
 });
 
 KMeans.start_Clustering(data).then(function(return_Val) {
-	console.log(return_Val);
+    console.log(return_Val);
 });
+```
+```
+//index.html
+
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body >
+        <script src="q.js"></script>
+        <script src="math.js"></script>
+        <script src="K_Means.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
+
 
 ```
