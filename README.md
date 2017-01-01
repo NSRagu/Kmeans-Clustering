@@ -69,7 +69,7 @@ KMeans.start_Clustering(data).then(function(return_Val) {
         <script src="K-Means/lib/math.js"></script>
         <script src="K-Means/K_Means.js"></script>
         <!--Include the main.js file where you use the algorithm.-->
-        <script src="main.js"></script><
+        <script src="main.js"></script>
 </body>
 </html>
 
