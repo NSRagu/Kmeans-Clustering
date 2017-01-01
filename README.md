@@ -12,7 +12,7 @@ K-MeansJS contains all the necessary logic for clustering unsupervised n-dimensi
 
 ##Installation:
 *  Download the project and unzip it.
-*  Copy the 'k-means' folder to folder in your project directory and follow sample usage.
+*  Copy the 'k-means' folder to your project directory and follow sample usage.
 
 ##Testing:
 * For unit testing Mocha and Sinon have been used. Use 'mocha test' to start the test.
