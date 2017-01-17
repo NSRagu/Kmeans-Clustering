@@ -14,9 +14,12 @@ K-MeansJS contains all the necessary logic for clustering unsupervised n-dimensi
 *  Download the project and unzip it.
 *  Copy the 'k-means' folder to your project directory and follow sample usage.
 
+
 ##Testing:
-* For unit testing Mocha and Sinon have been used. Use 'mocha test' to start the test.
-* If tests fail due to insufficient time run 'mocha test --timeout 100000' to allow sufficient time for running each case.
+* For unit testing Mocha and Sinon have been used. 
+* On newer computers run the command 'mocha --timeout 50000', the 50000 ms timeout is to give enough time for tests to complete as they might not process before timeout. 
+* On older computers run the command 'mocha --timeout 300000', the 300000 ms timeout is to give enough time for tests to complete as they might not process before timeout on older computers. 
+* If need be more than 300000 ms should be used to run the tests depending on the processing power of the computer. 
 
 
 ##Documentation
@@ -65,9 +68,9 @@ KMeans.start_Clustering(data).then(function(return_Val) {
   <head>
   </head>
   <body >
-        <script src="K-Means/lib/q.js"></script>
-        <script src="K-Means/lib/math.js"></script>
-        <script src="K-Means/K_Means.js"></script>
+        <script src="k-means/lib/q.js"></script>
+        <script src="k-means/lib/math.js"></script>
+        <script src="k-means/K_Means.js"></script>
         <!--Include the main.js file where you use the algorithm.-->
         <script src="main.js"></script>
 </body>
