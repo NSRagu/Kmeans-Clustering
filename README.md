@@ -2,7 +2,7 @@
 ###[Author: Hussain Mir Ali]
 K-MeansJS contains all the necessary logic for clustering unsupervised n-dimensional data.
 
-##External Librarbies Used:
+##External Libraries Used:
 * mathjs License: https://github.com/josdejong/mathjs/blob/master/LICENSE
 * mocha License: https://github.com/mochajs/mocha/blob/master/LICENSE
 * sinon Licencse: https://github.com/sinonjs/sinon/blob/master/LICENSE
@@ -13,18 +13,6 @@ K-MeansJS contains all the necessary logic for clustering unsupervised n-dimensi
 ##Installation:
 *  Download the project and unzip it.
 *  Copy the 'k-means' folder to your project directory and follow sample usage.
-
-
-##Testing:
-* For unit testing Mocha and Sinon have been used. 
-* On newer computers run the command 'mocha --timeout 50000', the 50000 ms timeout is to give enough time for tests to complete as they might not process before timeout. 
-* On older computers run the command 'mocha --timeout 300000', the 300000 ms timeout is to give enough time for tests to complete as they might not process before timeout on older computers. 
-* If need be more than 300000 ms should be used to run the tests depending on the processing power of the computer. 
-
-
-##Documentation
-*  The documentation is available in the 'out' folder of this project. Open the 'index.html' file under the 'out' folder with Crhome or Firefox.
-*  To generate the documentation run 'yuidoc .' command in the main directory of this project.
 
 ###Sample usage:
 
@@ -78,3 +66,15 @@ KMeans.start_Clustering(data).then(function(return_Val) {
 
 
 ```
+
+##Testing:
+* For unit testing Mocha and Sinon have been used. 
+* On newer computers run the command 'mocha --timeout 50000', the 50000 ms timeout is to give enough time for tests to complete as they might not process before timeout. 
+* On older computers run the command 'mocha --timeout 300000', the 300000 ms timeout is to give enough time for tests to complete as they might not process before timeout on older computers. 
+* If need be more than 300000 ms should be used to run the tests depending on the processing power of the computer. 
+
+
+##Documentation
+*  The documentation is available in the 'out' folder of this project. Open the 'index.html' file under the 'out' folder with Crhome or Firefox.
+*  To generate the documentation run 'yuidoc .' command in the main directory of this project.
+
