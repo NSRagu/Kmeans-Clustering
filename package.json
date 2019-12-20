@@ -2,22 +2,42 @@
   "name": "K-MeansJS",
   "version": "1.0.0",
   "description": "K-MeansJS contains all the necessary logic for clustering unsupervised n-dimensional data.",
-  "main": "K_Means.js",
+  "main": "KMeans.js",
   "author": "Hussain Mir Ali",
-  "private": true,
-  "license": "",
-  "dependencies": {
-    "mathjs": "^3.2.1",
-    "q": "^1.4.1",
-    "sinon": "^1.17.2",
-    "yuidocjs": "^0.9.0",
-    "mocha": "^2.3.4"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/register": "^7.7.0",
+    "chai": "^4.2.0",
+    "mocha": "^2.5.3",
+    "nodemon": "^1.19.4"
   },
   "directories": {
     "test": "test"
   },
+  "dependencies": {
+    "csv-parse": "^4.6.5",
+    "fs": "0.0.2",
+    "mathjs": "^6.2.3",
+    "sinon": "^1.17.2"
+  },
   "repository": {
     "type": "git",
     "url": "-"
+  },
+  "keywords": [
+    "k-means clustering",
+    "k-means",
+    "kmeans",
+    "machine learning",
+    "javascript machine learning",
+    "kmeans clustering browser",
+    "kmeans clustering es6"
+  ],
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --require ./node_modules/@babel/register --timeout 30000"
   }
 }

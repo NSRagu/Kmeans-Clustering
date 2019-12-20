@@ -1,7 +1,9 @@
-let K_Means = require('../K_Means');
+import { K_Means } from '../KMeans';
+
 let assert = require('assert');
 let mathjs = require('mathjs');
 let sinon = require('sinon');
+let parse = require('csv-parse');
 
 
 describe('K_Means', function() {
