@@ -1,6 +1,6 @@
 {
   "name": "@softnami/kmeans",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "K-MeansJS contains all the necessary logic for clustering unsupervised n-dimensional data.",
   "main": "KMeans.js",
   "author": "Hussain Mir Ali",

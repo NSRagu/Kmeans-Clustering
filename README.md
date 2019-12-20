@@ -19,7 +19,7 @@ KMeans contains all the necessary logic for clustering unsupervised n-dimensiona
 ```javascript
 //main.js file.
 
-import {K_Means} from '@softnami/KMeans';
+import {K_Means} from '@softnami/kmeans';
 
 let callback = function (data) {
     console.log(data);
