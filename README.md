@@ -1,6 +1,6 @@
 # KMeans
 ###[Author: Hussain Mir Ali]
-![Image of Yaktocat](https://upload.wikimedia.org/wikipedia/commons/e/e5/KMeans-Gaussian-data.svg)
+![Image of K-Means](https://upload.wikimedia.org/wikipedia/commons/e/e5/KMeans-Gaussian-data.svg)
 
 KMeans contains all the necessary logic for clustering unsupervised n-dimensional data.
 
@@ -10,7 +10,6 @@ KMeans contains all the necessary logic for clustering unsupervised n-dimensiona
 * sinon License: https://github.com/sinonjs/sinon/blob/master/LICENSE
 * yuidocjs License: https://github.com/yui/yuidoc/blob/master/LICENSE
 * nodeJS License: https://github.com/nodejs/node/blob/master/LICENSE
-* q License: https://github.com/kriskowal/q/blob/v1/LICENSE
 
 ##Installation:
 *  Run 'npm install @softnami/kmeans'.
