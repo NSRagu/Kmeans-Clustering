@@ -18,6 +18,11 @@
   "directories": {
     "test": "test"
   },
+  "homepage": "https://github.com/softnami/Kmeans-Clustering",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/softnami/Kmeans-Clustering.git"
+  },
   "dependencies": {
     "csv-parse": "^4.6.5",
     "fs": "0.0.2",
