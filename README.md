@@ -1,20 +1,20 @@
 # KMeans
-###[Author: Hussain Mir Ali]
+### [Author: Hussain Mir Ali]
 ![Image of K-Means](https://upload.wikimedia.org/wikipedia/commons/e/e5/KMeans-Gaussian-data.svg)
 
 KMeans contains all the necessary logic for clustering unsupervised n-dimensional data.
 
-##External Libraries Used:
+## External Libraries Used:
 * mathjs License: https://github.com/josdejong/mathjs/blob/master/LICENSE
 * mocha License: https://github.com/mochajs/mocha/blob/master/LICENSE
 * sinon License: https://github.com/sinonjs/sinon/blob/master/LICENSE
 * yuidocjs License: https://github.com/yui/yuidoc/blob/master/LICENSE
 * nodeJS License: https://github.com/nodejs/node/blob/master/LICENSE
 
-##Installation:
+## Installation:
 *  Run 'npm install @softnami/kmeans'.
 
-###Sample usage:
+### Sample usage:
 
 ```javascript
 //main.js file.
@@ -50,10 +50,10 @@ kMeans.start_Clustering(data).then(function(clusters) {
 });
 ```
 
-##Testing:
+## Testing:
 * For unit testing Mocha and Sinon have been used. 
 * Run 'npm test', if timeout occurs then increase timeout in test script.
 
-##Documentation
+## Documentation
 *  The documentation is available in the 'out' folder of this project. Open the 'index.html' file under the 'out' folder with Crhome or Firefox.
 *  To generate the  documentation run 'yuidoc .' command in the main directory of this project.
