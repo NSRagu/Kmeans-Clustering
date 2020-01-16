@@ -50,7 +50,7 @@ kMeans.start_Clustering(data).then(function(clusters) {
 
 ## Documentation
 *  The documentation is available in the 'out' folder of this project. Open the 'index.html' file under the 'out' folder with Crhome or Firefox.
-*  To generate the  documentation install yuidocjs globall and run 'yuidoc .' command in the main directory of this project.
+*  To generate the documentation install yuidocjs globally and run 'yuidoc .' command in the main directory of this project.
 
 ## Theory and Background
 * To learn more about how the K-Means algorithm works visit [stanford.edu](https://stanford.edu/~cpiech/cs221/handouts/kmeans.html).
