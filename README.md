@@ -1,32 +1,24 @@
 # KMeans
 ### [Author: Hussain Mir Ali]
-![Image of K-Means](https://upload.wikimedia.org/wikipedia/commons/e/e5/KMeans-Gaussian-data.svg)
+<div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/K-means_convergence.gif" target="_blank" alt="kmeans" width="30%" height="auto"></img>
+</div>
 
-KMeans contains all the necessary logic for clustering unsupervised n-dimensional data.
+This package contains logic for clustering unsupervised n-dimensional data using the K-Means clustering algorithm.
 
-## External Libraries Used:
-* mathjs License: https://github.com/josdejong/mathjs/blob/master/LICENSE
-* mocha License: https://github.com/mochajs/mocha/blob/master/LICENSE
-* sinon License: https://github.com/sinonjs/sinon/blob/master/LICENSE
-* yuidocjs License: https://github.com/yui/yuidoc/blob/master/LICENSE
-* nodeJS License: https://github.com/nodejs/node/blob/master/LICENSE
+## Installation
+```javascript
+npm install @softnami/kmeans
+```
 
-## Installation:
-*  Run 'npm install @softnami/kmeans'.
-
-### Sample usage:
+## Sample usage
 
 ```javascript
-//main.js file.
-
 import {K_Means} from '@softnami/kmeans';
 
-let callback = function (data) {
-    console.log(data);
-};
-
+//generate data or you can use your own data
 let data = [];
-let data_generate = function() {
+let generateData = function() {
     for (let i = 0; i < 10000; i++) {
         data[i] = [];
         for (let j = 0; j < 5; j++) {
@@ -34,26 +26,34 @@ let data_generate = function() {
         }
     }
 };
+generateData();
 
-data_generate();
 
+//instantiate K_Means 
 const kMeans = K_Means({
-    random_Init_Count: 4,
-    cluster_count: 7,
-    max_iterations: 10000,
-    iteration_callback: callback,
-    notify_count: 10
+    random_Init_Count: 4, //number of times to initialize random centroids
+    cluster_count: 7, //number of clusters needed
+    max_iterations: 10000, //maximum iterations to run clustering
+    iteration_callback: (debugInfo)=>{ console.log(debugInfo); }, //debug callback
+    notify_count: 10 //execute callback after every 10 iterations
 });
 
+//start clustering
 kMeans.start_Clustering(data).then(function(clusters) {
     console.log(clusters);
 });
 ```
 
-## Testing:
+## Testing
 * For unit testing Mocha and Sinon have been used. 
 * Run 'npm test', if timeout occurs then increase timeout in test script.
 
 ## Documentation
 *  The documentation is available in the 'out' folder of this project. Open the 'index.html' file under the 'out' folder with Crhome or Firefox.
-*  To generate the  documentation run 'yuidoc .' command in the main directory of this project.
+*  To generate the  documentation install yuidocjs globall and run 'yuidoc .' command in the main directory of this project.
+
+## Theory and Background
+* To learn more about how the K-Means algorithm works visit [stanford.edu](https://stanford.edu/~cpiech/cs221/handouts/kmeans.html).
+
+## 💡 Practice Daily Coding
+Practice coding questions from top companies daily, visit [softnami.com/dailycoding](https://www.softnami.com/dailycoding/signup.html?ref=npm).
